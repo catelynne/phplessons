@@ -5,69 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">  
-</head>
+    <link rel="stylesheet" href="style.css">
+  </head>
   <body>
   <?php
    include 'includes/header.php';
    ?>
   
   <?php
- //video 8
-    //Arithmetic Operators
-    echo 5**2;
-    echo 8%5;
+    //Loop
 
-
+    //While Loop
+    //Do while Loop
+    //For Loop
+    //Foreach Loop
+    $x = 1;
+    //While Loop
+        while ($x <= 5) {
+        echo "hi there<br>";
+        $x++;
+     }
     ?>
-
+   
+   
     <?php
-//video 9
-    //Assignment Operators
-    $x = 100;
-    $x += 20;
-
-    echo $x;
-
-?>
-
+    //Do while Loop
+    $x = 1;
+        do {
+        echo "hi there<br>";
+        $x++;
+     }
+        while ($x <= 5)
+    ?>
+     
+    <?php 
+    //For Loop
+        for ($x = 1; $x <= 10; $x++) {
+            echo "hi<br>";
+        }
+    ?>
+    
     <?php
-//video 10
-    //Comparison Operators
-    $x = 10;
-    $y = 10;
+   //Foreach Loop
+        $array = array("Daniel", "Jane", "Jacob", "John", "Mariane");
 
-    if ($x <> $y) {
-        echo "True!";
-    }
-    else {
-        echo "False!";
-    }
-
-
-
-?>
-
-    <?php
-//video 11
-    //Increment/Decrement Operators
-    $x = 10;
-    echo $x--;
-    echo $x;
-
-?>
-
-    <?php
-//video 12
-    //Logical Operators
-    $x = 10;
-    $y = 20;
-
-    if ($x == $y xor 1 == 1) {
-        echo "True";
-    }
-
-?>
+        foreach ($array as $loopdata) {
+            echo "My name is ".$loopdata. "<br>";   
+        }
+    ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
